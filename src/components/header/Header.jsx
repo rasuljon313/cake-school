@@ -1,11 +1,11 @@
-// const Header = () => {
-//   return (
-//     <>
-//   <header>
+const Header = () => {
+  return (
+    <>
+  <header>
 
-//   </header>
-//     </>
-//   )
-// }
+  </header>
+    </>
+  )
+}
 
-// export default Header
+export default Header
