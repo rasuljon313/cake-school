@@ -1,4 +1,4 @@
-import logo from "../../assets/image/Mask group.svg"
+import logo from "../../assets/image/1.svg"
 const Nav = () => {
   return (
     <>
