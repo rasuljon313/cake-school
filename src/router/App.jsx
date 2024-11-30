@@ -1,3 +1,4 @@
+import Header from "../components/header/Header"
 import Nav from "../components/nav/Nav"
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
     <>
     <div className="s">
       <Nav/>
+     <Header/>
     </div>
     </>
   )

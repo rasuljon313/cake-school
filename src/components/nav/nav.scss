@@ -1,5 +1,9 @@
 .nav{
-   background: #e8afb0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   width: 100%;
     &_box{
         display: flex;
         align-items: center;
@@ -27,11 +31,12 @@
         font-weight: 400;
     }
     &_btn{
-        color: #000;
+        color: #693B5F;
+        border: 1px solid #A36C96;
         font-size: 13px;
         font-weight: 400;
         background-color:#EDBFE3;
         border-radius: 11px;
-        padding: 25px 40px;
+        padding: 25px 60px;
     }
 }

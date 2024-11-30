@@ -1,18 +1,18 @@
-$Montserrat:('Bold',700),("BoldItalic",701),("Light",300),("Regular",400);
+$Manrope:('Bold',700),("Regular",400);
 
-@each $name,$weight in $Montserrat {
+@each $name,$weight in $Manrope {
     @font-face {
-        font-family: "Montserrat";
-        src: url('../fonts/Montserrat/Montserrat-#{$name}.ttf');
+        font-family: "Manrope";
+        src: url('../fonts/Manrope/static/Manrope-#{$name}.ttf');
         font-weight: $weight;
     }
 }
-$Raleway:('Bold',700),("Regular",400);
+$Lancelot:('Bold',700),("Regular",400);
 
-@each $name,$weight in $Raleway {
+@each $name,$weight in $Lancelot {
     @font-face {
-        font-family: "Raleway";
-        src: url('../fonts/Raleway/Raleway-#{$name}.ttf');
+        font-family: "Lancelot";
+        src: url('../fonts/Lancelot/Lancelot-#{$name}.ttf');
         font-weight: $weight;
     }
 }
