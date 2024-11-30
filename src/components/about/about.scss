@@ -1,0 +1,45 @@
+.about {
+    padding: 100px 0 0 0 ;
+    &_topLayout{
+&_title{
+    text-align: center;
+    color: #7A7156;
+    font-size: 80px;
+    font-family: "Lancelot";
+}
+&_txt{
+    text-align: center;
+    color: #7A7156;
+    font-size: 36px;
+margin-bottom: 60px;
+}
+    }
+  &_list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &_item {
+    &_img {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      p{
+        font-size: 24px;
+        color: #7A7156;
+
+      }
+    }
+    &_txt{
+        width: 270px;
+        font-size: 22px;
+        color: #B2AEA0;
+        font-weight: 400;
+        margin-bottom: 140px;
+    span{
+        font-weight: 700;
+    }
+    }
+  }
+}
