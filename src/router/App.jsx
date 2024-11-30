@@ -1,10 +1,7 @@
 const App = () => {
   return (
     <>
-    <header>
-      
-    </header>
-
+    <div className="s"></div>
     </>
   )
 }
