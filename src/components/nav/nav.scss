@@ -1,7 +1,38 @@
 .nav{
+   background: #e8afb0;
     &_box{
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    &_logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        max-width: 280px;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+    &_list{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &_item{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &_btn{
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        background-color:#EDBFE3;
+        border-radius: 11px;
+        padding: 30px 50px;
+        border: 1px solid red;
     }
 }
