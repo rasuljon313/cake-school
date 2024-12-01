@@ -65,6 +65,12 @@
         margin-bottom: 75px;
     }
     &_card{
+        &_image{
+            &_img{
+                width: 40px;
+                height: 40px;
+            }
+        }
         &_txt{
             color: #7A7156;
         }

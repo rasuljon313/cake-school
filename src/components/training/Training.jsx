@@ -9,13 +9,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Navigation} from 'swiper/modules';
+import { CiUser } from "react-icons/ci"
 const Training = () => {
     const students = [
         {
             name:"Насиба",
             years:"25 лет, Студентка ",
             txt:"Здравствуйте! Спасибо большое за ваши рецепты! Даже новичок по ним сможет приготовить! Самые вкусные торты у вас!"
-
+           
         },
         {
             name:"Насиба",
@@ -112,7 +113,7 @@ const Training = () => {
               <SwiperSlide key={index}>
                 <div className="students_card">
                   <div className="students_card_image">
-                    <img src={students.image} alt={students.name} />
+                    <CiUser className="students_card_img"  />
                     <div className="students-card_details">
                     <h3>{students.name}</h3>
                     <p className="students_card_role">{students.years}</p>
