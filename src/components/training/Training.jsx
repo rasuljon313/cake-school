@@ -110,17 +110,15 @@ const Training = () => {
           >
             {students.map((students, index) => (
               <SwiperSlide key={index}>
-                <div className="studens_card">
-                  <div className="studens_card_image">
+                <div className="students_card">
+                  <div className="students_card_image">
                     <img src={students.image} alt={students.name} />
-                    <div className="studens-card_details">
+                    <div className="students-card_details">
                     <h3>{students.name}</h3>
-                    <p className="studens_card_role">{students.years}</p>
+                    <p className="students_card_role">{students.years}</p>
                     </div>
                   </div>
-                  <div className="studens_card_content">
-                      <p>{students.txt}</p>
-                  </div>
+                      <p className="students_card_txt">{students.txt}</p>
                 </div>
               </SwiperSlide>
             ))}
