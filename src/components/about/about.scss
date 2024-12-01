@@ -1,22 +1,23 @@
 .about {
-    padding: 100px 0 0 0 ;
-    &_topLayout{
-&_title{
-    text-align: center;
-    color: #7A7156;
-    font-size: 80px;
-    font-family: "Lancelot";
-}
-&_txt{
-    text-align: center;
-    color: #7A7156;
-    font-size: 36px;
-margin-bottom: 60px;
-}
+  padding: 100px 0 0 0;
+  &_topLayout {
+    &_title {
+      text-align: center;
+      color: #7a7156;
+      font-size: 80px;
+      font-family: "Lancelot";
     }
+    &_txt {
+      text-align: center;
+      color: #7a7156;
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+  }
   &_list {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
   }
   &_item {
@@ -25,42 +26,79 @@ margin-bottom: 60px;
       align-items: center;
       gap: 10px;
       margin-bottom: 20px;
-      p{
+      p {
         font-size: 24px;
-        color: #7A7156;
-
+        color: #7a7156;
       }
     }
-    &_txt{
-        width: 270px;
-        font-size: 22px;
-        color: #B2AEA0;
-        font-weight: 400;
-        margin-bottom: 140px;
-    span{
+    &_txt {
+      width: 270px;
+      font-size: 22px;
+      color: #b2aea0;
+      font-weight: 400;
+      margin-bottom: 140px;
+      span {
         font-weight: 700;
-    }
+      }
     }
   }
-  &_bottomLayout{
-    &_list{
-        display: flex;
-        align-items: center;
-     gap: 30px;
+  &_bottomLayout {
+    &_cards {
+      position: relative;
     }
-    &_item{
+    &_card {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-width: 400px;
+    }
+    &_owner {
+      font-size: 36px;
+      color: #7a7156;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    &_name {
+      font-size: 80px;
+      font-family: "Lancelot";
+      color: #7a7156;
+      margin-bottom: 14px;
+    }
+    &_txt {
+      font-size: 24px;
+      color: #b2aea0;
+      margin-bottom: 28px;
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    &_item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      span {
+        padding: 22px 28px;
+        transition: 0.4s;
+        border-radius: 20px;
+        border: 2px solid #edbfe3;
+        color: #7a7156;
         display: flex;
         align-items: center;
         flex-direction: column;
-        span{
-            padding: 22px 32px;
-            transition: 0.4s;
-            border-radius: 20px;
-            border: 2px solid #EDBFE3;
-            &:hover{
-                background: #EDBFE3;
-            }
+        justify-content: center;
+        height: 95px;
+        margin-bottom: 16px;
+        &:hover {
+          background: #edbfe3;
+          color: #fff;
         }
+      }
     }
   }
 }

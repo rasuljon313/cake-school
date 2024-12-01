@@ -1,33 +1,11 @@
-import { useEffect, useState } from 'react';
-import CountUp from 'react-countup';
 import svg1 from "../../assets/image/Mask group.svg";
 import svg2 from "../../assets/image/second.svg";
 import svg3 from "../../assets/image/third.svg";
 import svg4 from "../../assets/image/four.svg";
-
+import right from "../../assets/image/right.svg"
+import left from "../../assets/image/left.svg"
 const About = () => {
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.querySelector('.about_bottomLayout');
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-          setIsInView(true);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
+    return (
     <>
       <main>
         <div className="about">
@@ -84,22 +62,16 @@ const About = () => {
                 <div className="about_bottomLayout_cards">
                   <img src="" alt="" />
                   <div className="about_bottomLayout_card">
-                    <p className="about_bottomLayout_owner">Основатель школы</p>
+                    <p className="about_bottomLayout_owner"><span><img src={left} alt="" /></span>Основатель школы <span><img src={right} alt="" /></span></p>
                     <h2 className="about_bottomLayout_name">Матлюба Шадиева</h2>
                     <p className="about_bottomLayout_txt">
                       Приветствую, меня зовут Матлюба, я спикер и основатель
                       онлайн-школы для кондитеров!
                     </p>
                     <ul className="about_bottomLayout_list">
-                      <li className="about_bottomLayout_item">
-                        {isInView ? <CountUp start={0} end={12} duration={13} /> : '12'} опыта
-                      </li>
-                      <li className="about_bottomLayout_item">
-                        {isInView ? <CountUp start={0} end={400} duration={9}  /> : '400'} учеников
-                      </li>
-                      <li className="about_bottomLayout_item">
-                        {isInView ? <CountUp start={0} end={800} duration={5} /> : '800'} работ
-                      </li>
+                      <li className="about_bottomLayout_item"><span>12 лет</span> опыта</li>
+                      <li className="about_bottomLayout_item"><span>400+</span> учеников</li>
+                      <li className="about_bottomLayout_item"><span>800+</span> работ</li>
                     </ul>
                   </div>
                 </div>
@@ -113,5 +85,3 @@ const About = () => {
 };
 
 export default About;
-
-
