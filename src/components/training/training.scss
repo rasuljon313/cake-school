@@ -1,0 +1,34 @@
+.training {
+  &_list {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &_item {
+    width: 360px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    &_txt {
+      text-align: center;
+    }
+    &_imgs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &_table {
+      position: absolute;
+      bottom: 0;
+    }
+    &_cake {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
