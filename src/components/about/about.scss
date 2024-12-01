@@ -42,4 +42,25 @@ margin-bottom: 60px;
     }
     }
   }
+  &_bottomLayout{
+    &_list{
+        display: flex;
+        align-items: center;
+     gap: 30px;
+    }
+    &_item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        span{
+            padding: 22px 32px;
+            transition: 0.4s;
+            border-radius: 20px;
+            border: 2px solid #EDBFE3;
+            &:hover{
+                background: #EDBFE3;
+            }
+        }
+    }
+  }
 }

@@ -1,8 +1,32 @@
+import { useEffect, useState } from 'react';
+import CountUp from 'react-countup';
 import svg1 from "../../assets/image/Mask group.svg";
 import svg2 from "../../assets/image/second.svg";
 import svg3 from "../../assets/image/third.svg";
 import svg4 from "../../assets/image/four.svg";
+
 const About = () => {
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.querySelector('.about_bottomLayout');
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          setIsInView(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <main>
@@ -14,46 +38,72 @@ const About = () => {
                 <p className="about_topLayout_txt">для вас, если вы:</p>
                 <ul className="about_list">
                   <li className="about_item">
-                    <div className="about_item_img"> 
-                      <img src={svg1} alt="" />
+                    <div className="about_item_img">
+                      <img src={svg1} alt="img1" />
                       <p>Любитель</p>
                     </div>
-                    <p className="about_item_txt"> 
-                      Хотите <span>научится готовить </span>вкусные и красивые <span>торты </span>для себя
-                      и близких
+                    <p className="about_item_txt">
+                      Хотите <span>научится готовить </span>вкусные и красивые{" "}
+                      <span>торты </span>для себя и близких
                     </p>
                   </li>
                   <li className="about_item">
                     <div className="about_item_img">
-                      <img src={svg2} alt="" />
+                      <img src={svg2} alt="img2" />
                       <p>Новичок</p>
                     </div>
-                    <p className="about_item_txt"> 
-                    Очень хотите начать, но <span>сомневаетесь, что сможете</span> так же, как и другие кондитеры
+                    <p className="about_item_txt">
+                      Очень хотите начать, но{" "}
+                      <span>сомневаетесь, что сможете</span> так же, как и
+                      другие кондитеры
                     </p>
                   </li>
                   <li className="about_item">
                     <div className="about_item_img">
-                      <img src={svg3} alt="" />
+                      <img src={svg3} alt="img3" />
                       <p>Опытный</p>
                     </div>
-                    <p className="about_item_txt"> 
-                    Вы уже опытный кондитер и хотите <span>расширить свой ассортимент</span>
+                    <p className="about_item_txt">
+                      Вы уже опытный кондитер и хотите{" "}
+                      <span>расширить свой ассортимент</span>
                     </p>
                   </li>
                   <li className="about_item">
                     <div className="about_item_img">
-                      <img src={svg4} alt="" />
+                      <img src={svg4} alt="img4" />
                       <p>Ученик</p>
                     </div>
-                    <p className="about_item_txt"> 
-                    Хотите <span>освоить</span> новый вид деятельности 
-                    и начать на <span>этом зарабатывать</span>
+                    <p className="about_item_txt">
+                      Хотите <span>освоить</span> новый вид деятельности и
+                      начать на <span>этом зарабатывать</span>
                     </p>
                   </li>
                 </ul>
               </div>
-              <div className="about_bottomLayout"></div>
+              <div className="about_bottomLayout">
+                <div className="about_bottomLayout_cards">
+                  <img src="" alt="" />
+                  <div className="about_bottomLayout_card">
+                    <p className="about_bottomLayout_owner">Основатель школы</p>
+                    <h2 className="about_bottomLayout_name">Матлюба Шадиева</h2>
+                    <p className="about_bottomLayout_txt">
+                      Приветствую, меня зовут Матлюба, я спикер и основатель
+                      онлайн-школы для кондитеров!
+                    </p>
+                    <ul className="about_bottomLayout_list">
+                      <li className="about_bottomLayout_item">
+                        {isInView ? <CountUp start={0} end={12} duration={13} /> : '12'} опыта
+                      </li>
+                      <li className="about_bottomLayout_item">
+                        {isInView ? <CountUp start={0} end={400} duration={9}  /> : '400'} учеников
+                      </li>
+                      <li className="about_bottomLayout_item">
+                        {isInView ? <CountUp start={0} end={800} duration={5} /> : '800'} работ
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -63,3 +113,5 @@ const About = () => {
 };
 
 export default About;
+
+
