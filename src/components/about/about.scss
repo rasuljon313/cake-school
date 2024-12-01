@@ -45,6 +45,12 @@
   &_bottomLayout {
     &_cards {
       position: relative;
+      &_img {
+        position: absolute;
+    top: 0;
+    left: -110px;
+    width: 600px;
+      }
     }
     &_card {
       position: absolute;
