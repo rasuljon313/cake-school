@@ -4,6 +4,9 @@ import cake2 from "../../assets/image/cake2.svg"
 import table2 from "../../assets/image/table2.png"
 import cake3 from "../../assets/image/cake3.svg"
 import table3 from "../../assets/image/table3.png"
+import scope from "../../assets/image/“.svg"
+// import prew from "../../assets/image/prew.svg"
+// import next from "../../assets/image/next.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,25 +17,25 @@ const Training = () => {
     const students = [
         {
             name:"Насиба",
-            years:"25 лет, Студентка ",
+            old:"25 лет, Студентка ",
             txt:"Здравствуйте! Спасибо большое за ваши рецепты! Даже новичок по ним сможет приготовить! Самые вкусные торты у вас!"
            
         },
         {
             name:"Насиба",
-            years:"25 лет, Студентка ",
+            old:"25 лет, Студентка ",
             txt:"Здравствуйте! Спасибо большое за ваши рецепты! Даже новичок по ним сможет приготовить! Самые вкусные торты у вас!"
 
         },
         {
             name:"Насиба",
-            years:"25 лет, Студентка ",
+            old:"25 лет, Студентка ",
             txt:"Здравствуйте! Спасибо большое за ваши рецепты! Даже новичок по ним сможет приготовить! Самые вкусные торты у вас!"
 
         },
         {
             name:"Насиба",
-            years:"25 лет, Студентка ",
+            old:"25 лет, Студентка ",
             txt:"Здравствуйте! Спасибо большое за ваши рецепты! Даже новичок по ним сможет приготовить! Самые вкусные торты у вас!"
 
         }
@@ -114,9 +117,10 @@ const Training = () => {
                 <div className="students_card">
                   <div className="students_card_image">
                     <CiUser className="students_card_img"  />
-                    <div className="students-card_details">
+                    <img src={scope} alt="" />
+                    <div className="students_card_info">
                     <h3>{students.name}</h3>
-                    <p className="students_card_role">{students.years}</p>
+                    <p className="students_card_old">{students.old}</p>
                     </div>
                   </div>
                       <p className="students_card_txt">{students.txt}</p>
@@ -133,3 +137,4 @@ const Training = () => {
 };
 
 export default Training;
+

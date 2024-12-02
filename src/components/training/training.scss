@@ -65,14 +65,45 @@
         margin-bottom: 75px;
     }
     &_card{
+
+        &_info{
+            h3{
+                font-size: 22px;
+                color: #7A7156;
+                font-weight: 700;
+            }
+        }
         &_image{
             &_img{
                 width: 40px;
                 height: 40px;
             }
         }
+        &_old{
+            color: #B2AEA0;
+        }
         &_txt{
+            font-size: 14px;
             color: #7A7156;
         }
     }
 }
+// .swiper-button-prev,
+// .swiper-button-next {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+// }
+
+// .swiper-button-prev {
+//   left: 10px;
+// }
+
+// .swiper-button-next {
+//   right: 10px;
+// }
+
+
+
+  
