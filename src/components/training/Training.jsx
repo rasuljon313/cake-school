@@ -42,7 +42,6 @@ const Training = () => {
   return (
     <>
       <section>
-        <Discound/>
         <div className="training">
           <div className="container">
             <div className="training_box">
@@ -81,6 +80,7 @@ const Training = () => {
             </div>
           </div>
         </div>
+        <Discound/>
         <div className="students">
           <div className="container">
             <div className="students_box">
