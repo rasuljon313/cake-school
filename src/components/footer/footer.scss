@@ -4,4 +4,25 @@
         align-items: center;
         justify-content: space-evenly;
     }
+    &_item{
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+    &_title{
+        font-size: 32px;
+        color: #7A7156;
+    }
+    &_txt{
+        font-size: 20px;
+        color: #A7A290;
+    }
+    &_btn{
+        background: #EDBFE3;
+        color: #693B5F;
+        padding: 40px 0 ;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 14px;
+    }
 }

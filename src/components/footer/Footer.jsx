@@ -3,7 +3,7 @@ const Footer = () => {
     <div>
       <footer>
         <div className="footer">
-          <div className="conteiner">
+          <div className="container">
             <div className="footer_box">
               <ul className="footer_list">
                 <li className="footer_item">
