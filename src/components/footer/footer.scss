@@ -18,11 +18,11 @@
         color: #A7A290;
     }
     &_btn{
-        background: #EDBFE3;
-        color: #693B5F;
-        padding: 40px 0 ;
-        font-size: 18px;
-        font-weight: 700;
-        border-radius: 14px;
+       display: flex;
+       align-items: center;
+  justify-content: center;
+  img{
+    width: 300px;
+  }
     }
 }
