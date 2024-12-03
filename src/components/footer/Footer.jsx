@@ -2,7 +2,7 @@ import btn1 from "../../assets/image/btn1.png"
 import btn2 from "../../assets/image/btn2.png"
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer>
         <div className="footer">
           <div className="container">
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 

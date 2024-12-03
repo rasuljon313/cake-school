@@ -5,14 +5,13 @@ import table2 from "../../assets/image/table2.png"
 import cake3 from "../../assets/image/cake3.svg"
 import table3 from "../../assets/image/table3.png"
 import scope from "../../assets/image/“.svg"
-// import prew from "../../assets/image/prew.svg"
-// import next from "../../assets/image/next.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Navigation} from 'swiper/modules';
 import { CiUser } from "react-icons/ci"
+import Discound from "../discount/Discound"
 const Training = () => {
     const students = [
         {
@@ -43,6 +42,7 @@ const Training = () => {
   return (
     <>
       <section>
+        <Discound/>
         <div className="training">
           <div className="container">
             <div className="training_box">
