@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom"
 import img from "../../assets/image/mainckake.png"
 import dot from "../../assets/image/3....png"
 import katalg from "../../assets/image/katalgimg.svg"
+import CatalogCard from "./CatalogCard"
 const Katalg = () => {
+    const scrollToQuestion = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
   return (
     <>
    <header>
@@ -16,10 +22,8 @@ const Katalg = () => {
             <img src={dot} alt="dot" />
             Более 30 авторских
           и проверенных рецептов тортов</p>
-          <btn className="katalg_btn">
-            <Link to="/catalog">
+          <btn className="katalg_btn" onClick={()=> scrollToQuestion("catalg")}>
             <img src={katalg} alt="" />
-            </Link>
             </btn>
         </div>
         <div className="katalg_img">
@@ -29,6 +33,7 @@ const Katalg = () => {
     </div>
   </div>
   </header>
+  <CatalogCard/>
     </>
   )
 }
