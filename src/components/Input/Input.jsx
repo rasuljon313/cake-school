@@ -1,4 +1,5 @@
 import formi from "../../assets/image/Subtract.png";
+import img from "../../assets/image/formbmbtn.png"
 const Input = () => {
   return (
     <>
@@ -14,11 +15,14 @@ const Input = () => {
                 <p className="input_time">Пн-Сб с 9:00 до 19:00</p>
                 <p className="input_txt">Время ответа в течениие <span>24 часов</span> с момента обращения</p>
                 <div className="input_form">
+                    <p>Ваше имя  *</p>
                     <input type="text" placeholder="Введите ваше имя" />
+                    <p>Ваш телефон  *</p>
                     <input type="text" placeholder="Введите ваш телефон" />
-                    <input type="text" placeholder="Оставьте свое сообщение" />
-                    <button>
-                        btn
+                    <p>Текст сообщения *</p>
+                    <textarea placeholder="Оставьте свое сообщение" rows="5" cols="40"></textarea>
+                    <button aria-label="send" className="input_form_btn" >
+                        <img src={img} alt="btn" />
                     </button>
                 </div>
               </div></div>
