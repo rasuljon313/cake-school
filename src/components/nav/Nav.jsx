@@ -30,6 +30,7 @@ const Nav = () => {
                     to="/catalog"
                     onClick={() => scrollToQuestion('discount')}
                     className="nav_link"
+                    aria-labelledby="discount-label"
                   >
                     Акции
                   </NavLink>
@@ -41,6 +42,7 @@ const Nav = () => {
                     to="/"
                     onClick={() => scrollToQuestion('reviews')}
                     className="nav_link"
+                    aria-labelledby="reviews-label"
                   >
                     Отзывы
                   </NavLink>
@@ -49,8 +51,8 @@ const Nav = () => {
                   <Link to="/form">Техподдержка</Link>
                 </li>
               </ul>
-              <button className="nav_btn">
-                <img src={kabinet} alt="" />
+              <button className="nav_btn" aria-label="Личный кабинет">
+                <img src={kabinet} alt="кабинет" />
               </button>
             </div>
           </div>
