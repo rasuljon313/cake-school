@@ -11,7 +11,8 @@ const Discound = () => {
   return (
     <>
 
-     <div className='discount' id="discount">
+    <section>
+    <div className='discount' id="discount">
         <div className="container">
             <div className="discount_box">
                 <ul className="discount_list">
@@ -46,6 +47,7 @@ const Discound = () => {
             </div>
         </div>
      </div>
+    </section>
 
     </>
   )

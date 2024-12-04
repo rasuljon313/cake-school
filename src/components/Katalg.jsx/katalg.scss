@@ -1,0 +1,52 @@
+.katalg {
+    height: 100vh;
+    background: #e8afb0;
+    padding-top: 100px;
+    overflow: hidden;
+    &_box {
+      position: relative;
+  
+    }
+    &_list{
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      padding: 70px 0 0 0 ;
+    }
+    &_title{
+      font-family: "Lancelot";
+      font-size: 80px;
+      width: 520px;
+      color: #7A7156;
+      margin-bottom: 6px;
+    }
+    &_texno{
+      font-size: 28px;
+      width: 560px;
+      color: #fff;
+      font-weight: 400;
+      line-height: 35.52px;
+      margin-bottom: 22px;
+    }
+    &_txt{
+      font-size: 22px;
+      width: 300px;
+      color: #fff;
+      font-weight: 400;
+      display: flex;
+      align-items: first baseline;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    &_img {
+      img {
+        position: absolute;
+        bottom: -50%;
+        right: -20%;
+        width: 700px;
+        height: 700px;
+      }
+    }
+  }
+  

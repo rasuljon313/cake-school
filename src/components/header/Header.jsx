@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import img from "../../assets/image/IMG_7557 копия 3 2.png"
+import katalg from "../../assets/image/katalgimg.svg"
 const Header = () => {
   return (
     <>
@@ -11,8 +12,8 @@ const Header = () => {
           <h2 className="header_title">MATU SCHOOL</h2>
           <p className="header_txt">Научись готовить самые <span>вкусные, натуральные</span> и разнообразные десерты!</p>
           <btn className="header_btn">
-            <Link to="/catalog">
-            Каталог уроков
+          <Link to="/catalog">
+            <img src={katalg} alt="" />
             </Link>
             </btn>
         </div>

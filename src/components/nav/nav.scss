@@ -4,6 +4,7 @@
   left: 0;
   z-index: 999;
   width: 100%;
+  padding: 10px 0 0 0 ;
   &_box {
     display: flex;
     align-items: center;
@@ -30,14 +31,5 @@
     color: #fff;
     font-size: 20px;
     font-weight: 400;
-  }
-  &_btn {
-    color: #693b5f;
-    border: 1px solid #a36c96;
-    font-size: 13px;
-    font-weight: 400;
-    background-color: #edbfe3;
-    border-radius: 11px;
-    padding: 25px 60px;
   }
 }

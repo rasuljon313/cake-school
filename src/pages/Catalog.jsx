@@ -1,6 +1,10 @@
+import Katalg from "../components/Katalg.jsx/Katalg"
+
 const Catalog = () => {
   return (
-    <div>Catalog</div>
+    <>
+     <Katalg/>
+    </>
   )
 }
 

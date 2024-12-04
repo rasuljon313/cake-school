@@ -38,7 +38,7 @@
 
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/image/1.svg";
-
+import kabinet from "../../assets/image/kabinet.svg"
 const Nav = () => {
   const scrollToQuestion = (id) => {
     const element = document.getElementById(id);
@@ -49,14 +49,18 @@ const Nav = () => {
 
   return (
     <>
-      <header>
+      <nav>
         <div className="nav">
           <div className="container">
             <div className="nav_box">
+            <NavLink to="/">
               <div className="nav_logo">
-                <img src={logo} alt="nav-logo" />
-                <p>Онлайн школа для кондитеров</p>
+              
+              <img src={logo} alt="nav-logo" />
+              <p>Онлайн школа для кондитеров</p>
+                  
               </div>
+              </NavLink>
               <ul className="nav_list">
               <li className="nav_item">
               <li className="nav_item">
@@ -84,12 +88,12 @@ const Nav = () => {
                 </li>
               </ul>
               <button className="nav_btn">
-                Личный кабинет
+                <img src={kabinet} alt="" />
               </button>
             </div>
           </div>
         </div>
-      </header>
+      </nav>
     </>
   );
 };
