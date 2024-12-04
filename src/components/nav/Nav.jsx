@@ -61,7 +61,7 @@ const Nav = () => {
               <li className="nav_item">
               <li className="nav_item">
               <NavLink
-                    to="/"
+                    to="/catalog"
                     onClick={() => scrollToQuestion('discount')}
                     className="nav_link"
                   >

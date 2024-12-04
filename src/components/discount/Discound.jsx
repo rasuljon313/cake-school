@@ -7,14 +7,11 @@ import cocolate5 from "../../assets/image/absolute5.svg"
 import cocolate6 from "../../assets/image/absolute6.svg"
 import cocolate7 from "../../assets/image/abcolute7.svg"
 import img1 from "../../assets/image/discount-btn.png"
-import { useLocation } from "react-router-dom"
 const Discound = () => {
-  const location = useLocation();
-  const isActive = location.pathname === "/";
   return (
     <>
 
-     <div className={`discount ${isActive ? "active" : ""}`} id="discount">
+     <div className='discount' id="discount">
         <div className="container">
             <div className="discount_box">
                 <ul className="discount_list">

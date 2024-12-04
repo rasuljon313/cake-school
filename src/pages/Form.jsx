@@ -1,6 +1,9 @@
+import Input from "../components/Input/Input"
 const Form = () => {
   return (
-    <div>Form</div>
+    <>
+     <Input/>
+    </>
   )
 }
 

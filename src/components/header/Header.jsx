@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import img from "../../assets/image/IMG_7557 копия 3 2.png"
 const Header = () => {
   return (
@@ -9,7 +10,11 @@ const Header = () => {
         <div className="header_list">
           <h2 className="header_title">MATU SCHOOL</h2>
           <p className="header_txt">Научись готовить самые <span>вкусные, натуральные</span> и разнообразные десерты!</p>
-          <btn className="header_btn">Каталог уроков</btn>
+          <btn className="header_btn">
+            <Link to="/catalog">
+            Каталог уроков
+            </Link>
+            </btn>
         </div>
         <div className="header_img">
           <img src={img} alt="img" />
