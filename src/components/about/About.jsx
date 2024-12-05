@@ -4,7 +4,7 @@ import svg3 from "../../assets/image/third.svg";
 import svg4 from "../../assets/image/four.svg";
 import right from "../../assets/image/right.svg";
 import left from "../../assets/image/left.svg";
-import ownerimg from "../../assets/image/779c1af5-no-bg-HD carve 4.png"
+import ownerimg from "../../assets/image/779c1af5-no-bg-HD (carve 4.png"
 const About = () => {
     return (
     <>
