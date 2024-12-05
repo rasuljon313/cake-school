@@ -88,21 +88,50 @@
         }
     }
 }
-// .swiper-button-prev,
-// .swiper-button-next {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   cursor: pointer;
-// }
+.studentss{
+padding-bottom: 50px;
+  background: #e8afb0;
+    &_title{
+        font-family: "Lancelot";
+        text-align: center;
+        font-size: 80px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &_txt{
+        text-align: center;
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 75px;
+    }
+    &_card{
+        &_info{
+            h3{
+                font-size: 22px;
+                color: #7A7156;
+                font-weight: 700;
+            }
+        }
+        &_image{
+            &_img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &_old{
+            color: #B2AEA0;
+        }
+        &_txt{
+            font-size: 14px;
+            color: #7A7156;
+        }
+    }
+}
+.swiper-slide{
+    background: #fff;
+}
 
-// .swiper-button-prev {
-//   left: 10px;
-// }
 
-// .swiper-button-next {
-//   right: 10px;
-// }
 
 
 

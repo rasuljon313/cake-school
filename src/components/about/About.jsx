@@ -4,7 +4,7 @@ import svg3 from "../../assets/image/third.svg";
 import svg4 from "../../assets/image/four.svg";
 import right from "../../assets/image/right.svg";
 import left from "../../assets/image/left.svg";
-import ownerimg from "../../assets/image/779c1af5-no-bg-HD (carve 4.png"
+import ownerimg from "../../assets/image/779c1af5-no-bg-HD carve 4.png"
 const About = () => {
     return (
     <>
@@ -61,7 +61,7 @@ const About = () => {
               </div>
               <div className="about_bottomLayout">
                 <div className="about_bottomLayout_cards">
-                  <img className="about_bottomLayout_owner" src={ownerimg} alt="ownerimg" />
+                  <img className="about_bottomLayout_cards_img" src={ownerimg} alt="ownerimg" />
                   <div className="about_bottomLayout_card">
                     <p className="about_bottomLayout_owner"><span><img src={left} alt="" /></span>Основатель школы <span><img src={right} alt="" /></span></p>
                     <h2 className="about_bottomLayout_name">Матлюба Шадиева</h2>
