@@ -11,7 +11,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Navigation} from 'swiper/modules';
 import { CiUser } from "react-icons/ci"
-import Discound from "../discount/Discound"
 const Training = () => {
     const students = [
         {
@@ -80,7 +79,6 @@ const Training = () => {
             </div>
           </div>
         </div>
-        <Discound/>
         <div className="students">
           <div className="container">
             <div className="students_box">

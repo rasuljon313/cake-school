@@ -24,11 +24,10 @@ const Nav = () => {
               </div>
               </NavLink>
               <ul className="nav_list">
-              <ul className="nav_list">
   <li className="nav_item">
     <NavLink
-      to="/"
-      onClick={() => scrollToQuestion('discount')}
+    to="/catalog"
+      onClick={() => scrollToQuestion('discountt')}
       className="nav_link"
     >
       Акции
@@ -48,32 +47,6 @@ const Nav = () => {
     <Link to="/form">Техподдержка</Link>
   </li>
 </ul>
-              {/* <li className="nav_item">
-              <li className="nav_item">
-              <NavLink
-                    to="/catalog"
-                    onClick={() => scrollToQuestion('discount')}
-                    className="nav_link"
-                  >
-                    Акции
-                  </NavLink>
-
-                </li>
-              </li>
-                <li className="nav_item">
-                <NavLink
-                    to="/"
-                    onClick={() => scrollToQuestion('reviews')}
-                    className="nav_link"
-                    aria-labelledby="reviews-label"
-                  >
-                    Отзывы
-                  </NavLink>
-                </li>
-                <li className="nav_item">
-                  <Link to="/form">Техподдержка</Link>
-                </li> */}
-              </ul>
               <button className="nav_btn" aria-label="Личный кабинет">
                 <img src={kabinet} alt="кабинет" />
               </button>
@@ -87,7 +60,6 @@ const Nav = () => {
 
 export default Nav;
 
-// otziv ishlashi
 
 
 

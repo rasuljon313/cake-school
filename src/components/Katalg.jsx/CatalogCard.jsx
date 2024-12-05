@@ -1,4 +1,3 @@
-
 const CatalogCard = () => {
     const obj = [
         {
@@ -73,7 +72,7 @@ const CatalogCard = () => {
                                             <div className="catalg_card_texts">
                                             <h4 className="catalg_card_title">{item.title}</h4>
                                             <p className="catalg_card_text">{item.description}</p>
-                                            <p className="catalg_card_price">{item.price}</p>
+                                            <p className="catalg_card_price">{item.price}$</p>
                                             </div>
                                         </div>
                                     </li>
