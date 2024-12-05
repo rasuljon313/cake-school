@@ -21,9 +21,9 @@ const Discound = () => {
                       Вы можете купить все рецепты со скидкой 
                       30% за <span>39 000 сум</span>
                       </p>
-                      <div className="discount_btn">
+                      <a href="/form" className="discount_btn">
                         <img src={img1} alt="" />
-                      </div>
+                      </a>
                     </li>
                     <li className="discount_item_images">
                         <img className="discount_item_img" src={cocolate} alt="" />
@@ -39,9 +39,9 @@ const Discound = () => {
                       <p className="discount_item_txt">
                       Или вы можете купить все рецепты тортов со скидкой 30% за <span>19 990</span>
                       </p>
-                      <div className="discount_btn">
+                      <a href="/form" className="discount_btn">
                         <img src={img1} alt="" />
-                      </div>
+                      </a>
                     </li>
                 </ul>
             </div>

@@ -14,7 +14,9 @@ const Footer = () => {
                     Напишите нам в техподдержку и мы свяжемся с вами в ближайшее
                     время и ответим на ваши вопросы
                   </p>
-                  <button aria-label="техподдержка"  className="footer_btn"><img src={btn1} alt="техподдержка" /></button>
+                  <button aria-label="техподдержка"  className="footer_btn">
+                    <a href="/form"><img src={btn1} alt="техподдержка" /></a>
+                  </button>
                 </li>
                 <li className="footer_item">
                   <h3 className="footer_title">Чат для кондитеров</h3>

@@ -27,7 +27,7 @@ const Nav = () => {
               <ul className="nav_list">
   <li className="nav_item">
     <NavLink
-      to="/catalog"
+      to="/"
       onClick={() => scrollToQuestion('discount')}
       className="nav_link"
     >
