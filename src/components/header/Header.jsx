@@ -12,7 +12,7 @@ const Header = () => {
           <p className="header_txt">Научись готовить самые <span>вкусные, натуральные</span> и разнообразные десерты!</p>
           <btn className="header_btn">
           <a href="/catalog">
-            <img src={katalg} alt="catalg" />
+            <img src={katalg} alt="catalog" />
             </a>
             </btn>
         </div>
