@@ -85,3 +85,7 @@
     }
   }
 }
+.phone-input {
+    grid-column: 1 / 3; // Grid ustunlarini belgilash
+    width: 100%; // To'liq kenglikda ko'rsatish
+  }

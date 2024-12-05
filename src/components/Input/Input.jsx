@@ -1,13 +1,12 @@
 import { useState } from "react";
-import axios from "axios"; 
+import axios from "axios";
 import formi from "../../assets/image/Subtract.png";
-import img from "../../assets/image/formbmbtn.png";
 import toast from "react-hot-toast";
 
 const Input = () => {
   const [formState, setFormState] = useState({
     name: "",
-    phone: "",
+    phone: "", 
     message: "",
   });
 
@@ -15,11 +14,13 @@ const Input = () => {
     const { name, value } = e.target;
 
     if (name === "phone") {
-      const numericValue = value.replace(/[^0-9]/g, ''); 
-      setFormState({
-        ...formState,
-        [name]: numericValue,
-      });
+      const numericValue = value.replace(/[^0-9]/g, '');
+      if (numericValue.length <= 12) { 
+        setFormState({
+          ...formState,
+          [name]: numericValue,
+        });
+      }
     } else if (name === "name") {
       const alphabeticValue = value.replace(/[^a-zA-Z\s]/g, ''); 
       setFormState({
@@ -40,14 +41,14 @@ const Input = () => {
     const { name, phone, message } = formState;
 
     if (!name || !phone || !message) {
-      toast.error("Iltimos, barcha maydonlarni to'ldiring!"); 
+      toast.error("Iltimos, barcha maydonlarni to'ldiring!");
       return;
     }
 
     const token = "7224593125:AAG1qPC99h1sk1iqE-A23LMkhGSTmq_FTi4";
     const chatId = 5531572292;
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
-    const messageContent = `Name: ${name}, Phone: ${phone}, Message: ${message}`;
+    const messageContent = `Name: ${name}, Phone: +998${phone}, Message: ${message}`;
 
     axios({
       url: url,
@@ -98,7 +99,6 @@ const Input = () => {
                   <p>Ваш телефон *</p>
                   <input
                     name="phone"
-                    id="phone"
                     value={formState.phone}
                     onChange={handleChange}
                     required
@@ -121,7 +121,6 @@ const Input = () => {
                     aria-label="send"
                     className="input_form_btn"
                   >
-                    {/* <img src={img} alt="btn" /> */}
                     Отправить
                   </button>
                 </form>
@@ -135,3 +134,4 @@ const Input = () => {
 };
 
 export default Input;
+
