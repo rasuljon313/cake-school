@@ -36,7 +36,9 @@
             transition: 0.5s;
           opacity: 1;
           max-height: 500px;
-          font-size: 14px;
+          font-weight: 700;
+          font-size: 18px;
+          color: #7a7156;
           margin-top: 20px;
           @include media(400) {
             margin-top: 10px;

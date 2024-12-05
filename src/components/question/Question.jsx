@@ -116,34 +116,34 @@ const Question = () => {
                                 <li className="question_item">
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-                                        <p className={`question_item_txt1 ${activ === 3 ? "activ" : ""}`}>
+                                        <p className={`question_item_txt1 ${activ === 4 ? "activ" : ""}`}>
                                             {`O'quvchilar uchun qaysi shirinliklar eng mos keladi?`}
                                         </p>
                                     </div>
-                                    <button className={`question_item_btn ${activ === 3 ? "activ" : ""}`} onClick={() => toggleActive(3)}>
-                                        {activ === 3 ? `-` : `+`}
+                                    <button className={`question_item_btn ${activ === 4 ? "activ" : ""}`} onClick={() => toggleActive(4)}>
+                                        {activ === 4 ? `-` : `+`}
                                     </button>
                                 </li>
                                 <li className="question_item">
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-                                        <p className={`question_item_txt1 ${activ === 3 ? "activ" : ""}`}>
+                                        <p className={`question_item_txt1 ${activ === 5 ? "activ" : ""}`}>
                                             {`Bu dasturdan keyin o'quvchilar qanday professional imkoniyatlarga ega bo'lishi mumkin?`}
                                         </p>
                                     </div>
-                                    <button className={`question_item_btn ${activ === 3 ? "activ" : ""}`} onClick={() => toggleActive(3)}>
-                                        {activ === 3 ? `-` : `+`}
+                                    <button className={`question_item_btn ${activ === 5 ? "activ" : ""}`} onClick={() => toggleActive(5)}>
+                                        {activ === 5 ? `-` : `+`}
                                     </button>
                                 </li>
                                 <li className="question_item">
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-                                        <p className={`question_item_txt1 ${activ === 3 ? "activ" : ""}`}>
+                                        <p className={`question_item_txt1 ${activ === 6 ? "activ" : ""}`}>
                                             {`Pishirish darslari orqali o'quvchilarga qanday yangi ko'nikmalar o'rgatiladi?`}
                                         </p>
                                     </div>
-                                    <button className={`question_item_btn ${activ === 3 ? "activ" : ""}`} onClick={() => toggleActive(3)}>
-                                        {activ === 3 ? `-` : `+`}
+                                    <button className={`question_item_btn ${activ === 6 ? "activ" : ""}`} onClick={() => toggleActive(6)}>
+                                        {activ === 6 ? `-` : `+`}
                                     </button>
                                 </li>
                             </ul>
