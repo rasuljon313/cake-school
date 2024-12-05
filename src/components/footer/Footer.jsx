@@ -24,7 +24,9 @@ const Footer = () => {
                     Присоединяйтесь в наш ТГ канал, там мы делимся: рецептами,
                     советами, общаемся и обмениваемся опытом
                   </p>
-                  <button aria-label="присоединиться" className="footer_btn"><img src={btn2} alt="присоединиться" /></button>
+                  <button aria-label="присоединиться" className="footer_btn">
+                   <a href="/tell"> <img src={btn2} alt="присоединиться" /></a>
+                    </button>
                 </li>
               </ul>
             </div>

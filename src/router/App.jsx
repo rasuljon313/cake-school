@@ -31,6 +31,7 @@ import CackeId from "../pages/CackeId";
 import Catalog from "../pages/Catalog";
 import HomeLayout from "../pages/HomeLayout";
 import Mainpage from "../pages/Mainpage";
+import Tellform from "../pages/Tellform";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
           <Route path="/cabinate" element={<Cabinate />} />
           <Route path="/cacke/:id" element={<CackeId />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/tell" element={<Tellform />} />
         </Route>
       </Routes>
     </BrowserRouter>
