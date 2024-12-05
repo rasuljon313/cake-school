@@ -62,4 +62,51 @@
    color: #7A7156;
  margin-bottom: 70px;
     }
+    &_list{
+        display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    }
+    &_item{
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(107, 94, 90, 0.1);
+        transition: transform 0.3s ease;
+    }
+    &_card{
+        img{
+            width: 352px;
+            height: 100%;
+            margin-bottom: 20px;
+        }
+        &_texts{
+ padding: 0 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        &_title{
+            font-size: 22px;
+            color: #7A7156;
+            margin-bottom: 10px;
+        }
+        &_text{
+            font-size: 18px;
+            text-align: center;
+            color: #7A7156;
+            margin-bottom: 20px;
+        }
+        &_price{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: red;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+    }
 }
