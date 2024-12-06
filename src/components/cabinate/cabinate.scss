@@ -1,13 +1,43 @@
 .cabinate{
+    height: 100vh;
+    background: #e8afb0;
+    overflow: hidden;
+    &_nav{
+        &_logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 250px;
+        }
+        &_list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
     &_box{
         position: relative;
     }
+    &_title{
+        width: 450px;
+        margin-bottom: 20px;
+        font-size: 80px;
+        color: #7A7156;
+        font-family: "Lancelot";
+    }
+    &_txt{
+  margin-bottom: 50px;
+  font-size: 28px;
+  color: #fff;
+    }
     &_card{
-        img{
+        padding-top: 100px;
+        width: 590px;
+    }
+        &_owner{
             position: absolute;
-            top: 0;
+            bottom: -25%;
             right: -110px;
             width: 600px;
         }
-    }
 }

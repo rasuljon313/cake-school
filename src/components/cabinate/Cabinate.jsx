@@ -24,7 +24,7 @@ const Cabinate = () => {
                   </li>
                 </ul>
               </nav>
-              <div className="cabinate_cad">
+              <div className="cabinate_card">
                 <h3 className="cabinate_title">мое почтение !</h3>
                 <p className="cabinate_txt">
                   На этой странице вы найдете материалы урока. Готовьте с
@@ -37,7 +37,7 @@ const Cabinate = () => {
                 </btn>
               </div>
               <div className="cabinate_img">
-                <img src={ownerimg} alt="" />
+                <img className="cabinate_owner" src={ownerimg} alt="" />
               </div>
             </div>
           </div>
