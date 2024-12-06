@@ -1,6 +1,7 @@
 import img1 from "../../assets/image/Rectangle 424.svg";
 import img2 from "../../assets/image/Untitled 2.png"
 import { FaPlay } from "react-icons/fa";
+import Pdf from "./Pdf";
 const CackeVideo = () => {
   return (
     <>
@@ -45,6 +46,7 @@ const CackeVideo = () => {
             </div>
           </div>
         </div>
+        <Pdf/>
       </main>
     </>
   );
