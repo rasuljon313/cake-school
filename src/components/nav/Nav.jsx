@@ -44,7 +44,13 @@ const Nav = () => {
     </NavLink>
   </li>
   <li className="nav_item">
-    <Link to="/form">Техподдержка</Link>
+    <NavLink
+      to="/form"
+      className="nav_link"
+      aria-labelledby="reviews-label"
+    >
+      Техподдержка
+    </NavLink>
   </li>
 </ul>
               <button className="nav_btn" aria-label="Личный кабинет">

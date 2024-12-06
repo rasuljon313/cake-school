@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import formi from "../../assets/image/Subtract.png";
 import toast from "react-hot-toast";
-
+import logo from "../../assets/image/Group 420.svg"
 const Tell = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -75,8 +75,9 @@ const Tell = () => {
       <div className="tell">
         <div className="container">
           <div className="tell_box">
+          <a href="/"><img className="logo" src={logo} alt="" /></a>
             <div className="tell_form">
-              <img src={formi} alt="formi" />
+              <img className="img" src={formi} alt="formi" />
               <div className="tell_card">
                 <h3 className="tell_title">Чат для кондитеров </h3>
                 <p className="tell_support">Напишите нам, мы сами свяжемся с вами.</p>

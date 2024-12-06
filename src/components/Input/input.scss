@@ -93,16 +93,12 @@ margin-bottom: 15px;
 .tell {
     background: #e8afb0;
     height: 100vh;
-  padding: 95px 0 0 0;
+  padding: 50px 0 0 0;
   &_box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    img {
-      width: 400px;
-      height: 80%;
-    }
   }
   &_card {
     position: absolute;
@@ -144,16 +140,20 @@ margin-bottom: 15px;
         color: #00000033;
         font-size: 12px;
       }
-    }
-    button {
-      img {
-        width: 300px;
-        height: 100%;
-      }
+    
     }
   }
 }
 .phone-input {
     grid-column: 1 / 3; 
     width: 100%;
+  }
+  .img {
+    width: 400px;
+    height: 80%;
+  }
+  .logo{
+    width: 150px;
+    height: 100%;
+margin-bottom: 15px;
   }
