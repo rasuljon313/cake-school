@@ -1,63 +1,3 @@
-// import { useState } from "react";
-
-// const Question = () => {
-//     const [activ, setActiv] = useState(null);
-//     const a = (questionNumber) => {
-//         if (activ === questionNumber) {
-//             setActiv(null);
-//           } else {
-//             setActiv(questionNumber); 
-//           }
-//      setActiv(true)
-//      console.log(activ);
-//     }
-//     return (
-//       <>
-//         <section>
-//           <div className="question" id="reviews">
-//             <div className="container">
-//               <div className="question_box">
-//                 <h3 className="question_title">ОТВЕТЫ</h3>
-//                 <p className="question_txt">на часто задаваемые вопросы</p>
-//                 <ul className="question_list">
-//                   <li className="question_item">
-//                     <div className="question_item_box">
-//                     <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-//                     <p className={`question_item_txt1 ${activ === 1 ? "activ" : ""}`}>{`Shirinlik pishirishni boshlash uchun qanday asbob-uskunalar kerak?`}</p>
-//                     </div>
-//                     <button className={`question_item_btn ${activ === 1 ? "" : "activ"}`} onClick={()=> a(1)}>
-//                     {activ === 1 ? `-` : `+`}
-//                     </button>
-//                   </li>
-//                   <li className="question_item">
-//                   <div className="question_item_box">
-//                     <p className="question_item_txt1">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-//                     <p className="question_item_txt2">{`Shirinlik pishirish darslari qanday tartibda o'qitiladi?`}</p>
-//                     </div>
-//                     <button className="question_item_btn" onClick={()=> a}>
-//                       +
-//                     </button>
-//                   </li>
-//                   <li className="question_item">
-//                   <div className="question_item_box">
-//                     <p className="question_item_txt1">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
-//                     <p className="question_item_txt2">{`Qanday qilib shirinliklarga yangi ta'mlar qo'shish mumkin?`}</p>
-//                     </div>
-//                     <button className="question_item_btn" onClick={()=> a}>
-//                       +
-//                     </button>
-//                   </li>
-//                 </ul>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-//       </>
-//     );
-//   };
-  
-//   export default Question;
-  
 import { useState } from "react";
 
 const Question = () => {
@@ -84,7 +24,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 1 ? "activ" : ""}`}>
-                                            {`Shirinlik pishirishni boshlash uchun qanday asbob-uskunalar kerak?`}
+                                            {`Чтобы начать печь сладости, какие инструменты и оборудование нужны?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 1 ? "activ" : ""}`} onClick={() => toggleActive(1)}>
@@ -95,7 +35,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 2 ? "activ" : ""}`}>
-                                            {`Shirinlik pishirish darslari qanday tartibda o'qitiladi?`}
+                                            {`Как проводится уроки по приготовлению сладких блюд?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 2 ? "activ" : ""}`} onClick={() => toggleActive(2)}>
@@ -106,7 +46,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 3 ? "activ" : ""}`}>
-                                            {`Qanday qilib shirinliklarga yangi ta'mlar qo'shish mumkin?`}
+                                            {`Как можно добавить новые вкусы в сладости?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 3 ? "activ" : ""}`} onClick={() => toggleActive(3)}>
@@ -117,7 +57,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 4 ? "activ" : ""}`}>
-                                            {`O'quvchilar uchun qaysi shirinliklar eng mos keladi?`}
+                                            {`Какие сладости наиболее подходят для учеников?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 4 ? "activ" : ""}`} onClick={() => toggleActive(4)}>
@@ -128,7 +68,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 5 ? "activ" : ""}`}>
-                                            {`Bu dasturdan keyin o'quvchilar qanday professional imkoniyatlarga ega bo'lishi mumkin?`}
+                                            {`Какими профессиональными возможностями могут обладать ученики после этого курса?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 5 ? "activ" : ""}`} onClick={() => toggleActive(5)}>
@@ -139,7 +79,7 @@ const Question = () => {
                                     <div className="question_item_box">
                                         <p className="question_item_txt">Ниже мы собрали часто задаваемые вопросы и ответили на них</p>
                                         <p className={`question_item_txt1 ${activ === 6 ? "activ" : ""}`}>
-                                            {`Pishirish darslari orqali o'quvchilarga qanday yangi ko'nikmalar o'rgatiladi?`}
+                                            {`Какие новые навыки ученики приобретают на уроках по выпечке?`}
                                         </p>
                                     </div>
                                     <button className={`question_item_btn ${activ === 6 ? "activ" : ""}`} onClick={() => toggleActive(6)}>
