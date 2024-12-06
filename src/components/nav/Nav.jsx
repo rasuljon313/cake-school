@@ -48,7 +48,9 @@ const Nav = () => {
   </li>
 </ul>
               <button className="nav_btn" aria-label="Личный кабинет">
+                <NavLink to="/cabinate">
                 <img src={kabinet} alt="кабинет" />
+                </NavLink>
               </button>
             </div>
           </div>
