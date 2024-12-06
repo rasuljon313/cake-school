@@ -1,5 +1,6 @@
 import img1 from "../../assets/image/Rectangle 424.svg";
 import img2 from "../../assets/image/Untitled 2.png"
+import { FaPlay } from "react-icons/fa";
 const CackeVideo = () => {
   return (
     <>
@@ -36,8 +37,9 @@ const CackeVideo = () => {
               <ul className="video_list">
                 <li className="video_item">
                   <a href="https://www.youtube.com/watch?v=h5s2eGfxs7Q">
-                    <img src={img1} alt="Video thumbnail of the cake" />
+                    <img src={img2} alt="Video thumbnail of the cake" />
                   </a>
+                   <FaPlay className="video_item_play" />
                 </li>
               </ul>
             </div>

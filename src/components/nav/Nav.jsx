@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/1.svg";
 import kabinet from "../../assets/image/kabinet.svg"
 const Nav = () => {
