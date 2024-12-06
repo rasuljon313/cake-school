@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/1.svg";
 import ownerimg from "../../assets/image/779c1af5-no-bg-HD (carve 4.png";
 import katalg from "../../assets/image/katalgimg.svg";
+import CackeVideo from "../videos/CackeVideo";
 const Cabinate = () => {
   return (
     <>
@@ -43,6 +44,7 @@ const Cabinate = () => {
           </div>
         </div>
       </header>
+      <CackeVideo/>
     </>
   );
 };

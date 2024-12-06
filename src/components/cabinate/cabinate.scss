@@ -7,12 +7,20 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            width: 250px;
+            width: 300px;
+            color: #fff;
+            font-size: 20px;
         }
         &_list{
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+        &_item{
+            &_txt{
+                color: #fff;
+                font-size: 20px;
+            }
         }
     }
     &_box{
