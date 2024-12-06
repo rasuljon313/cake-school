@@ -140,9 +140,21 @@ padding-bottom: 50px;
         font-family: "Lancelot";
         line-height: 91px;
     }
+    &_card{
+        &_image{
+ img{
+    width: 352px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+        }
+    }
 }
 .swiper-slide{
     background: #fff;
+    padding: unset !important;
+    overflow: hidden;
 }
 
 

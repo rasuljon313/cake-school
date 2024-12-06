@@ -1,35 +1,34 @@
-import scope from "../../assets/image/“.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Navigation} from 'swiper/modules';
-import { CiUser } from "react-icons/ci"
+import cacke1 from "../../assets/image/111.jpeg"
+import cacke2 from "../../assets/image/222.jpeg"
+import cacke3 from "../../assets/image/22222.jpeg"
+import cacke4 from "../../assets/image/33333.jpeg"
+import cacke5 from "../../assets/image/4444.jpeg"
+import cacke6 from "../../assets/image/555.jpeg"
 const CackeSwiper = () => {
     const cacke = [
         {
-         
-         img:"../../assets/image/Rectangle 10.png"
-         
-           
+         img:cacke1         
         },
         {
-         img:"../../assets/image/Rectangle 10.png"
-         
-         
-
+         img:cacke2
         },
         {
          
-         img:"../../assets/image/Rectangle 10.png"
-         
-
+         img:cacke3
         },
         {
-         img:"../../assets/image/Rectangle 10.png"
-         
-         
-
+         img:cacke4
+        },
+        {
+         img:cacke5
+        },
+        {
+         img:cacke6
         }
     ]
   return (
