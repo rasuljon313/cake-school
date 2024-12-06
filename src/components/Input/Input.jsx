@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import formi from "../../assets/image/Subtract.png";
 import toast from "react-hot-toast";
-
+import logo from "../../assets/image/Group 420.svg"
 const Input = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -77,8 +77,9 @@ const Input = () => {
       <div className="input">
         <div className="container">
           <div className="input_box">
+            <a href="/"><img className="input_box_logo" src={logo} alt="" /></a>
             <div className="input_form">
-              <img src={formi} alt="formi" />
+              <img className="input_box_img" src={formi} alt="formi" />
               <div className="input_card">
                 <h3 className="input_title">Напишите нам</h3>
                 <p className="input_support">Режим работы тех.поддержки</p>

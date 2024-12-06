@@ -1,13 +1,16 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../components/nav/Nav";
 
 const HomeLayout = () => {
+  const location = useLocation();
+
+  const showNav = !(location.pathname === "/cabinate" || location.pathname === "/form");
+
   return (
     <>
-      <Nav />
+      {showNav && <Nav />}
       <Outlet />
     </>
-    
   );
 };
 

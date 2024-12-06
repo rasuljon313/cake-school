@@ -1,12 +1,17 @@
 .input {
     background: #e8afb0;
-  padding: 95px 0 0 0;
+  padding: 10px 0 0 0;
   &_box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    img {
+    &_logo{
+        width: 150px;
+        height: 100%;
+margin-bottom: 15px;
+      }
+    &_img {
       width: 500px;
       height: 100%;
     }
