@@ -11,8 +11,9 @@ import cocolate5 from "../../assets/image/absolute5.svg"
 import cocolate6 from "../../assets/image/absolute6.svg"
 import cocolate7 from "../../assets/image/abcolute7.svg"
 import img1 from "../../assets/image/discount-btn.png"
-import Studens from "../Studens"
+import Studens from "../training/Studens"
 import Recipe from "../recipe/Recipe"
+import CackeSwiper from "../training/CackeSwiper"
 const Katalg = () => {
     const scrollToQuestion = (id) => {
         const element = document.getElementById(id);
@@ -84,6 +85,7 @@ const Katalg = () => {
      </div>
    <Studens/>
    <Recipe/>
+   <CackeSwiper/>
     </section>
     </>
   )

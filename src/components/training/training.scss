@@ -127,6 +127,20 @@ padding-bottom: 50px;
         }
     }
 }
+.cackeImg{
+    background: #e8afb0;
+    padding: 50px 0 50px 0 ;
+    &_title{
+        font-size: 36px;
+        color: #fff;
+    }
+    &_txt{
+        font-size: 80px;
+        color:#fff;
+        font-family: "Lancelot";
+        line-height: 91px;
+    }
+}
 .swiper-slide{
     background: #fff;
 }

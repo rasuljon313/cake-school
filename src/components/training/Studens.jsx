@@ -1,4 +1,4 @@
-import scope from "../assets/image/“.svg"
+import scope from "../../assets/image/“.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
