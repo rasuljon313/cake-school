@@ -34,17 +34,16 @@
   &_img {
     img {
       position: absolute;
-      top: 0;
-      right: -220px;
+      bottom: -30%;
+      right: 0;
       object-fit: cover;
       object-position: top;
-      width: 750px;
-      min-height: 1300px;
+      width: 500px;
     }
   }
   &_btn{
     img{
-      width: 200px;
+      width: 300px;
     height: 100%;
     }
   }
