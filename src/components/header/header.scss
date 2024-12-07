@@ -15,13 +15,13 @@
   }
   &_title{
     font-family: "Lancelot";
-    font-size: 120px;
+    font-size: 100px;
     width: 520px;
     color: #7A7156;
     margin-bottom: 12px;
   }
   &_txt{
-    font-size: 26px;
+    font-size: 22px;
     width: 560px;
     color: #fff;
     font-weight: 400;
@@ -40,6 +40,12 @@
       object-position: top;
       width: 750px;
       min-height: 1300px;
+    }
+  }
+  &_btn{
+    img{
+      width: 200px;
+    height: 100%;
     }
   }
 }
