@@ -1,4 +1,4 @@
-import img from "../../assets/image/imgg3.png"
+import img from "../../assets/image/IMG_7557 копия 3 2.png"
 import katalg from "../../assets/image/katalgimg.svg"
 const Header = () => {
   return (

@@ -5,6 +5,9 @@
     color: #7a7156;
     font-family: "Lancelot";
     margin-bottom: 12px;
+    @include media(1000){
+      font-size: 60px;
+    }
   }
   &_txt {
     text-align: center;
@@ -12,9 +15,16 @@
     color: #7a7156;
     font-weight: 700;
     margin-bottom: 70px;
+    @include media(1000){
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
   }
   &_list{
     margin-bottom: 80px;
+    @include media(1000){
+      margin-bottom: 60px;
+    }
   }
   &_item {
     display: flex;
@@ -25,6 +35,12 @@
     &_txt {
       font-size: 22px;
       color: #7a7156;
+      @include media(900){
+        font-size: 18px;
+      }
+      @include media(800){
+        font-size: 16px;
+      }
     }
     &_txt1{
         display: block;
@@ -40,9 +56,12 @@
           font-size: 18px;
           color: #7a7156;
           margin-top: 20px;
-          @include media(400) {
+          @include media(900) {
             margin-top: 10px;
             font-size: 12px;
+          }
+          @include media(600){
+            font-size: 8px ;
           }
         }
     }
@@ -57,6 +76,11 @@
       color: #7a7156;
       font-size: 28px;
       box-shadow: 0px 9px 6px 0px #d3abca36;
+      @include media(850){
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+      }
     }
   }
 }

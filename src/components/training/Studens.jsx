@@ -48,19 +48,19 @@ const Studens = () => {
             loop={true}
             breakpoints={{
               1200: {
-                slidesPerView: 3, 
+                slidesPerView: 1, 
                 spaceBetween: 30, 
               },
               1050: {
-                slidesPerView: 3, 
+                slidesPerView: 1, 
                 spaceBetween: 30, 
               },
               1000: {
-                slidesPerView: 3, 
+                slidesPerView: 1, 
                 spaceBetween: 30, 
               },
               750: {
-                slidesPerView: 2, 
+                slidesPerView: 1, 
               }
             }}
             className="swiper"

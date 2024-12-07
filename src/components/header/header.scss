@@ -19,6 +19,10 @@
     width: 520px;
     color: #7A7156;
     margin-bottom: 12px;
+    @include media(950){
+      font-size: 80px;
+      width: min-content;
+    }
   }
   &_txt{
     font-size: 22px;
@@ -27,6 +31,10 @@
     font-weight: 400;
     line-height: 35.52px;
     margin-bottom: 60px;
+    @include media(970){
+      width: 400px;
+      margin-bottom: 20px;
+    }
     span{
         font-weight: 700;
     }
@@ -34,16 +42,28 @@
   &_img {
     img {
       position: absolute;
-      bottom: -30%;
-      right: 0;
+      bottom: -100%;
+      right: -20%;
       object-fit: cover;
       object-position: top;
-      width: 500px;
+      width: 850px;
+      @include media(1050){
+        width: 750px;
+        bottom: -80%;
+        right: -15%;
+      }
+      @include media(950){
+        width: 650px;
+        bottom: -80%;
+      }
+      // @include media(950){
+      //   bottom: -100%;
+      // }
     }
   }
   &_btn{
     img{
-      width: 300px;
+      width: 200px;
     height: 100%;
     }
   }

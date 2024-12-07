@@ -16,8 +16,15 @@
     gap: 10px;
     max-width: 280px;
     cursor: pointer;
+    @include media(1050){
+      max-width: 215px;
+    }
+    img{
+width: 80px;
+height: 100%;
+    }
     p {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
       color: #fff;
     }
@@ -29,13 +36,16 @@
   }
   &_link{
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
   }
   &_btn{
     img{
       width: 200px;
       height: 100%;
+      @include media(1050){
+        width: 150px;
+      }
     }
   }
 }
