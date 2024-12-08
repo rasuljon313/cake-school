@@ -6,6 +6,7 @@ import HomeLayout from "../pages/HomeLayout";
 import Mainpage from "../pages/Mainpage";
 import Tellform from "../pages/Tellform";
 import Cabinatepage from "../pages/Cabinatepage";
+import Id from "../pages/ID";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/form" element={<Form />} />
           <Route path="/cabinate" element={<Cabinatepage />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/catalog/:id" element={<Id />} />
           <Route path="/tell" element={<Tellform />} />
         </Route>
       </Routes>
@@ -24,3 +26,5 @@ const App = () => {
 };
 
 export default App;
+
+
