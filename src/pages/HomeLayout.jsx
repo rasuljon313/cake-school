@@ -4,7 +4,7 @@ import Nav from "../components/nav/Nav";
 const HomeLayout = () => {
   const location = useLocation();
 
-  const showNav = !(location.pathname === "/cabinate" || location.pathname === "/form" || location.pathname === "/tell");
+  const showNav = !(location.pathname === "/cabinate" || location.pathname === "/form" || location.pathname === "/tell" || location.pathname.startsWith("/catalog/"));
 
   return (
     <>
