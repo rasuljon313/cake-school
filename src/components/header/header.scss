@@ -12,6 +12,9 @@
     align-items: start;
     flex-direction: column;
     padding: 70px 0 0 0 ;
+    @include media(850){
+      padding: unset ;
+    }
   }
   &_title{
     font-family: "Lancelot";
@@ -22,6 +25,10 @@
     @include media(950){
       font-size: 80px;
       width: min-content;
+    }
+    @include media(850){
+      font-size: 100px;
+      margin: unset;
     }
   }
   &_txt{
@@ -34,6 +41,10 @@
     @include media(970){
       width: 400px;
       margin-bottom: 20px;
+    }
+    @include media(830){
+      margin-bottom: 10px;
+        font-size: 18px;
     }
     span{
         font-weight: 700;
@@ -53,18 +64,28 @@
         right: -15%;
       }
       @include media(950){
-        width: 650px;
-        bottom: -80%;
+        width: 750px;
+        bottom: -100%;
+        right: -20%;
       }
-      // @include media(950){
-      //   bottom: -100%;
-      // }
+      @include media(830){
+        width: 650px;
+        bottom: -130%;
+        right: -20%;
+      }
+      @include media(780){
+        bottom: unset;
+        left: 40px;
+      }
     }
   }
   &_btn{
     img{
       width: 200px;
     height: 100%;
+    @include media(780){
+     position: absolute;
+    }
     }
   }
 }
