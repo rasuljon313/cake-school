@@ -54,6 +54,12 @@
     }
   }
   &_img {
+    @include media(780){
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     img {
       position: absolute;
       bottom: -100%;
@@ -77,26 +83,32 @@
         right: -20%;
       }
       @include media(780){
-        bottom: unset;
-        left: 40px;
+        bottom: -300px;
+        right: 10px ; 
       }
     }
   }
   &_btn{
     @include media(780){
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999;
-      right: 30%;
+      display: none;
+    }
+    &.active{
+      display: none;
+      @include media(780){
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        right: 30%;
+      }
     }
     img{
       width: 200px;
     height: 100%;
     @include media(780){
      position: absolute;
-     right: -30px;
+     right: 35%;
     }
     }
   }

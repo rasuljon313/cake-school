@@ -4,7 +4,7 @@
   left: 0;
   z-index: 999;
   width: 100%;
-  padding: 10px 0 0 0 ;
+  padding: 10px 0 0 0;
   &_box {
     display: flex;
     align-items: center;
@@ -16,12 +16,12 @@
     gap: 10px;
     max-width: 280px;
     cursor: pointer;
-    @include media(1050){
+    @include media(1050) {
       max-width: 215px;
     }
-    img{
-width: 80px;
-height: 100%;
+    img {
+      width: 80px;
+      height: 100%;
     }
     p {
       font-size: 16px;
@@ -34,18 +34,87 @@ height: 100%;
     align-items: center;
     gap: 40px;
   }
-  &_link{
+  &_link {
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    @include media(780) {
+      display: none;
+    }
   }
-  &_btn{
-    img{
+  &_btn {
+    &_active {
+      display: none; 
+
+      @include media(780) {
+        display: block;
+        &_icon {
+          background: #a36c96;
+          color: #fff;
+          padding: 10px;
+          width: 45px;
+          height: 45px;
+          border-radius: 3px;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    img {
       width: 200px;
       height: 100%;
-      @include media(1050){
+
+      @include media(1050) {
         width: 150px;
       }
+
+      @include media(780) {
+        display: none; // Hide the image on screens 780px and above
+      }
+    }
+  }
+  &_menu{
+    position: absolute; /* or relative, depending on your layout */
+    top: 0;
+    left: 0;
+    width: 100%; /* adjust as needed */
+    background-color: white; /* or your desired background */
+    opacity: 0; /* hidden by default */
+    visibility: hidden; /* hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: -1;
+    &.active{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1; /* fully visible */
+      visibility: visible; /* make it visible */
+      z-index: 1000;
+      position: absolute;
+      background: #fff;
+    }
+    &_list{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+    &_link{
+      color: #000;
+      font-size: 24px;
+    }
+    &_close{
+      position: absolute;
+      top: 10px;
+ right: 10px;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      color: gray;
+      border-radius: 3px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     }
   }
 }

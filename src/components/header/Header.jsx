@@ -1,5 +1,6 @@
 import img from "../../assets/image/IMG_7557 копия 3 2.png"
 import katalg from "../../assets/image/katalgimg.svg"
+import katalgA from "../../assets/image/header_btn.svg"
 const Header = () => {
   return (
     <>
@@ -13,6 +14,11 @@ const Header = () => {
           <btn className="header_btn">
           <a href="/catalog">
             <img src={katalg} alt="catalog" />
+            </a>
+            </btn>
+          <btn className="header_btn active">
+          <a href="/catalog">
+            <img src={katalgA} alt="catalog" />
             </a>
             </btn>
         </div>
