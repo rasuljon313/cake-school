@@ -78,7 +78,7 @@ const CackeSwiper = () => {
     <SwiperSlide key={index}>
       <div className="cackeImg_card">
         <div className="cackeImg_card_image">
-          <img src={cacke.img} alt="" /> werwcrqc
+          <img src={cacke.img} alt="" /> 
         </div>
       </div>
     </SwiperSlide>
