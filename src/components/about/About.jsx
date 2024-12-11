@@ -61,8 +61,7 @@ const About = () => {
               </div>
               <div className="about_bottomLayout">
                 <div className="about_bottomLayout_cards">
-                  <img className="about_bottomLayout_cards_img" src={ownerimg} alt="ownerimg" />
-                  <div className="about_bottomLayout_card">
+                <div className="about_bottomLayout_card">
                     <p className="about_bottomLayout_owner"><span><img src={left} alt="" /></span>Основатель школы <span><img src={right} alt="" /></span></p>
                     <h2 className="about_bottomLayout_name">Матлюба Шадиева</h2>
                     <p className="about_bottomLayout_txt">
@@ -75,6 +74,7 @@ const About = () => {
                       <li className="about_bottomLayout_item"><span>800+</span> работ</li>
                     </ul>
                   </div>
+                  <img className="about_bottomLayout_cards_img" src={ownerimg} alt="ownerimg" />
                 </div>
               </div>
             </div>
