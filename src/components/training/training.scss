@@ -203,16 +203,37 @@ padding-bottom: 50px;
 }
 .cackeImg{
     background: #e8afb0;
-    padding: 50px 0 50px 0 ;
+    padding: 50px 0 ;
+    @include media(400){
+padding: 25px 0 ;
+    }
     &_title{
         font-size: 36px;
         color: #fff;
+        @include media(900){
+            font-size: 32px;
+        }
+        @include media(700){
+            font-size: 26px;
+        }
+        @include media(400){
+            font-size: 20px;
+        }
     }
     &_txt{
         font-size: 80px;
         color:#fff;
         font-family: "Lancelot";
         line-height: 91px;
+        @include media(900){
+            font-size: 60px;
+        }
+        @include media(700){
+            font-size: 40px;
+        }
+        @include media(400){
+            font-size: 30px;
+        }
     }
     &_card{
         &_image{
@@ -230,6 +251,12 @@ padding-bottom: 50px;
     padding: unset !important;
     overflow: hidden;
 }
+.cackeImg_card_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
 .swiper-button-next{
 top: unset !important;
 bottom: 0 !important;
@@ -240,6 +267,10 @@ border-radius: 50%;
 width: 50px;
 height: 50px;
 font-size: 44px;
+@include media (500){
+    width: 40px;
+    height: 40px;
+}
 &_n{
     color: #7A7156;
     
@@ -259,6 +290,10 @@ font-size: 44px;
         width: 50px;
         height: 50px;
         font-size: 44px;
+        @include media (500){
+            width: 40px;
+            height: 40px;
+        }
         &_p{
    color: #7A7156;
         }
@@ -266,6 +301,14 @@ font-size: 44px;
             display: none;
         }
  }
+ .swiper-wrapper {
+    padding: 20px 0;
+    height: 300px !important;
+    @include media(400){
+      padding: unset;
+      height: 250px !important;
+    }
+  }
 
 
 

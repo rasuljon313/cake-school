@@ -20,6 +20,9 @@
    display: flex;
    align-items: center;
    gap: 78px;
+   @include media(850){
+    flex-direction: column;
+   }
    &_img{
     display: flex;
     align-items: center;
@@ -32,6 +35,9 @@
         display: flex;
         align-items: center;
         gap: 74px;
+        @include media(1000){
+            flex-direction: column;
+        }
        &_sostav{
         font-size: 32px;
         color: #7A7156;
@@ -55,6 +61,12 @@
         color: #7A7156;
         font-family: "Lancelot";
         margin-bottom: 20px;
+        @include media(1000){
+            width: 400px;
+            font-size: 40px;
+            line-height: 55px;
+            margin-bottom: 10px;
+        }
     }
     &_txt{
         line-height: 35px;
@@ -69,6 +81,9 @@
         border-radius: 20px;
         width: 600px;
         height: 100%;
+        @include media(600){
+            width: 70%;
+        }
     }
   }
   .video{
@@ -93,16 +108,27 @@
             width: 900px;
             height: 100%;
             border-radius: 20px;
+            @include media(1000){
+                width: 100%;
+            }
         }
     }
   }
   .pdf{
     background: #e8afb0;
     padding: 120px 0 ;
+    &_card1{
+        @include media(700){
+            width: 100%;
+        }
+    }
     &_card2{
         display: flex;
         align-items: center;
         gap: 78px;
+        @include media(1000){
+            flex-direction: column;
+        }
         &_img{
          display: flex;
          align-items: center;
@@ -122,11 +148,26 @@
         color: #7A7156;
         font-family: "Lancelot";
         margin-bottom: 20px;
+        @include media(500){
+            margin-bottom: 10px;
+            line-height: 30px;
+            font-size: 40px;
+            width: 100%;
+        }
+        @include media(400){
+            margin-bottom: 5px;
+            line-height: 30px;
+            font-size: 30px;
+        }
     }
     &_txt{
         line-height: 35px;
         font-size: 22px;
         color: #fff;
+        @include media(500){
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
     }
     &_btnimg{
         width: 300px;
@@ -144,6 +185,9 @@
         background: #fff;
         padding: 50px 0 50px 45px;
         border-radius: 20px;
+        @include media(700){
+            width: unset;
+        }
         &_img{
             position: absolute;
             bottom: 0;
@@ -151,6 +195,9 @@
             width: 300px;
             object-fit: contain;
             border-radius: 0 0 20px 0 ;
+            @include media(600){
+                width: 35%;
+            }
         }
         &_title{
             font-size: 60px;
@@ -177,6 +224,9 @@
     }
 &_img1{
     width: 400px;
+    @include media(500){
+        width: 70%;
+    }
 }
     
   }

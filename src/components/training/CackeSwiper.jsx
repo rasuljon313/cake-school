@@ -52,20 +52,25 @@ const CackeSwiper = () => {
   loop={true}
   breakpoints={{
     1200: {
-      slidesPerView: 3, 
-      spaceBetween: 30, 
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
     1050: {
-      slidesPerView: 3, 
-      spaceBetween: 30, 
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
     1000: {
-      slidesPerView: 3, 
-      spaceBetween: 30, 
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
     750: {
-      slidesPerView: 2, 
-    }
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
   }}
   className="swiper"
 >
@@ -73,7 +78,7 @@ const CackeSwiper = () => {
     <SwiperSlide key={index}>
       <div className="cackeImg_card">
         <div className="cackeImg_card_image">
-          <img src={cacke.img} alt="" />
+          <img src={cacke.img} alt="" /> werwcrqc
         </div>
       </div>
     </SwiperSlide>

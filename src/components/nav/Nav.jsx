@@ -83,7 +83,7 @@ const Nav = () => {
         <NavLink
               to="/"
               onClick={() => handleLinkClick(() => scrollToQuestion('reviews'))}
-        className="nav_menu_link">otzif</NavLink>
+        className="nav_menu_link">Отзывы</NavLink>
         </li>
         <li className="nav_menu_item">
           <NavLink to="/form" className="nav_menu_link" onClick={toggleMenu}>Техподдержка</NavLink>

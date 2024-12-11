@@ -1,23 +1,44 @@
 .discount {
     padding: 50px 0 120px 0 ;
 background: #e8afb0;
+ @include media(500){
+  padding: 50px 0 70px 0 ;
+ }
 &_box{
     padding: 70px 80px 20px 80px;
     border-radius: 30px;
     background: #fff;
+    @include media(970){
+      padding: 50px 40px 20px 40px;
+    }
 }
   &_list {
     display: flex;
     align-items: center;
     gap: 40px;
+    @include media(550){
+      flex-direction: column;
+    }
   }
   &_item {
+    @include media(550){
+      display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+    }
     &_images{
         position: relative;
     }
     &_img{
         width: 250px;
         height: 100%;
+        @include media(970){
+          width: 200px;
+        }
+        @include media(700){
+          width: 150px;
+        }
     }
     &_img1{
         position: absolute;
@@ -25,6 +46,10 @@ background: #e8afb0;
         left: -27%;
         width: 85px;
         height: 85px;
+        @include media(700){
+          width: 50px;
+          height: 50px;
+        }
         }
         &_img2{
         position: absolute;
@@ -32,6 +57,10 @@ background: #e8afb0;
         right:0;
         width: 80px;
         height: 80px;
+        @include media(700){
+          width: 45px;
+          height: 45px;
+        }
         }
         &_img3{
         position: absolute;
@@ -39,6 +68,10 @@ background: #e8afb0;
         left: 0;
         width: 40px;
         height: 40px;
+        @include media(700){
+          width: 15px;
+          height: 15px;
+        }
         }
         &_img4{
         position: absolute;
@@ -46,6 +79,10 @@ background: #e8afb0;
         right: -17%;
         width: 40px;
         height: 40px;
+        @include media(700){
+          width: 15px;
+          height: 15px;
+        }
         }
         &_img5{
         position: absolute;
@@ -53,32 +90,67 @@ background: #e8afb0;
         right: 50%;
         width: 35px;
         height: 35px;
+        @include media(700){
+          width: 12px;
+          height: 12px;
+        }
         }
         &_img6{
         position: absolute;
         top: 20%;
         right: -5%;  
         width: 30px;
-        height: 30px;  
+        height: 30px;
+        @include media(700){
+          width: 12px;
+          height: 12px;
+        } 
         }
         &_img7{
         position: absolute;
         bottom: 27%;
         left: -12%;  
         width: 25px;
-        height: 25px;  
+        height: 25px; 
+        @include media(700){
+          width: 10px;
+          height: 10px;
+        } 
         }
     &_txt {
       font-size: 28px;
       color: #7a7156;
       margin-bottom: 28px;
+      @include media(1100){
+        font-size: 20px;
+      }
+      @include media(900){
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+      @include media(750){
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      @include media(650){
+        font-size: 12px;
+      }
       span {
         font-weight: 700;
       }
     }
+    a{
+     @include media(550){
+      width: 35%;
+     }
+    }
     img {
       width: 100%;
       cursor: pointer;
+      @include media(550){
+
+      }
     }
   }
 }
