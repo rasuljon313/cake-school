@@ -84,7 +84,7 @@
       }
       @include media(780){
         bottom: -300px;
-        right: 10px ; 
+        right: unset ; 
       }
     }
   }
@@ -109,6 +109,12 @@
     @include media(780){
      position: absolute;
      right: 35%;
+    }
+    @include media(630){
+      right: 30%;
+    }
+    @include media(450){
+      right: 25%;
     }
     }
   }
