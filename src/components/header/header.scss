@@ -31,7 +31,12 @@
     }
     @include media(850){
       font-size: 100px;
-      margin: unset;
+      line-height: 100px;
+      margin: unset ;
+    }
+    @include media(500){
+      font-size: 70px;
+      line-height: 70px;
     }
   }
   &_txt{
@@ -48,6 +53,10 @@
     @include media(830){
       margin-bottom: 10px;
         font-size: 18px;
+    }
+    @include media(780){
+      font-size: 16px;
+      line-height: 25px;
     }
     span{
         font-weight: 700;
@@ -77,14 +86,21 @@
         bottom: -100%;
         right: -20%;
       }
+      @include media(855){
+        bottom: -170%;
+      }
       @include media(830){
         width: 650px;
-        bottom: -130%;
+        bottom: -160%;
         right: -20%;
       }
       @include media(780){
         bottom: -300px;
         right: unset ; 
+      }
+      @include media(450){
+        width: 580px;
+        left: -70px;
       }
     }
   }

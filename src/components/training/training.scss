@@ -1,6 +1,14 @@
 .training {
     background: #e8afb0;
     padding: 100px 0 130px 0 ;
+    &_box{
+        @include media(650){
+            display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+        }
+    }
     &_title{
         font-family: "Lancelot";
         text-align: center;
@@ -8,10 +16,10 @@
         color: #fff;
         margin-bottom: 10px;
     @include media(1000){
-        font-size: 60px;
+        font-size: 65px;
     }
     @include media(700){
-        font-size: 40px;
+        font-size: 55px;
     }
     }
     &_txt{
@@ -35,6 +43,9 @@
         gap: 30px;
     }
     @include media(700){
+        display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    height: 100%;
         gap: 20px;
     }
   }
@@ -54,8 +65,22 @@
     @include media(900){
         height: 300px;
     }
+    @include media(780){
+        height: 280px;
+        padding: 10px;
+    }
+    @include media(700){
+        height: 320px;
+    }
     &_txt {
       text-align: center;
+      color: #7A7156;
+      span{
+        font-weight: 700;
+      }
+      @include media(700){
+        font-size: 14px;
+      }
     }
     &_imgs {
       display: flex;
@@ -66,6 +91,10 @@
     &_table {
       position: absolute;
       bottom: 0;
+      @include media(700){
+        width: 100%;
+        height: 40%;
+      }
     }
     &_cake {
       position: absolute;
