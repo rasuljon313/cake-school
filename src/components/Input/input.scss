@@ -17,8 +17,12 @@ margin-bottom: 15px;
       height: 700px;
       @include media(500){
         width: 400px;
-        height: 80%;
+        height: 100%;
         object-fit: contain;
+      }
+      @include media(400){
+        width: 300px;
+        height: 100%;
       }
     }
   }
@@ -42,7 +46,12 @@ margin-bottom: 15px;
     font-weight: 700;
     margin-bottom: 15px;
     @include media(500){
-      font-size: 24px;
+      font-size: 18px;
+      margin: 10px;
+    }
+    @include media(400){
+      font-size: 16px;
+      margin: 20px 0 ;
     }
   }
   &_support {
@@ -51,6 +60,7 @@ margin-bottom: 15px;
     margin-bottom: 12px;
     @include media(500){
       font-size: 14px;
+      margin-bottom: 10px;
     }
   }
   &_time {
@@ -60,6 +70,7 @@ margin-bottom: 15px;
     font-weight: 700;
     @include media(500){
       font-size: 14px;
+      margin-bottom: 10px;
     }
   }
   &_txt {
@@ -76,16 +87,27 @@ margin-bottom: 15px;
       font-weight: 700;
     }
   }
+  &_user{
+    &_txt{
+      text-align: start !important;
+      color: #00000033 !important;
+      @include media(400){
+        display: none;
+      }
+    }
+  }
   &_form {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px 10px;
     p{
+      text-align: center;
         color: #797979;
         font-size: 12px;
         @include media(500){
           font-size: 10px;
+          width: 200px;
         }
     }
     input {
@@ -97,7 +119,7 @@ margin-bottom: 15px;
       @include media(500){
         padding: 10px 0 10px 15px;
         margin-bottom: 5px;
-        width: 55%;
+        width: 220px;
       }
       &::placeholder{
         color: #00000033;
@@ -107,15 +129,20 @@ margin-bottom: 15px;
     textarea{
         grid-column: 1 / 3;
       background: linear-gradient(0deg, #f3f7ff, #f3f7ff);
-      padding: 16px 0 12px 18px;
+      padding: 10px 0 8px 12px;
       margin-bottom: 10px;
       border-radius: 12px;
       border: none;
       outline: none;
       @include media(500){
-        padding: 10px 0 10px 15px;
-        margin-bottom: 5px;
-        width: 55%;
+        color :#f3f7ff;
+        font-size: 12px;
+        width: 220px;
+        height: 70px;
+      }
+      &::placeholder{
+        color: #00000033;
+        font-size: 12px;
       }
     }
     button {
@@ -126,6 +153,7 @@ margin-bottom: 15px;
     }
   }
 }
+
 .tell {
     background: #e8afb0;
     height: 100vh;

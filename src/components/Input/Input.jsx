@@ -88,7 +88,7 @@ const Input = () => {
                   Время ответа в течениие <span>24 часов</span> с момента обращения
                 </p>
                 <form id="myinput" onSubmit={send} className="input_form">
-                  <p>Ваше имя *</p>
+                  <p className="input_user_txt">Ваше имя *</p>
                   <input
                     type="text"
                     name="name"
@@ -97,7 +97,7 @@ const Input = () => {
                     placeholder="Введите ваше имя"
                     required
                   />
-                  <p>Ваш телефон *</p>
+                  <p className="input_user_txt">Ваш телефон *</p>
                   <input
                     name="phone"
                     value={formState.phone}
@@ -106,7 +106,7 @@ const Input = () => {
                     type="text"
                     placeholder="Введите ваш телефон"
                   />
-                  <p>Текст сообщения *</p>
+                  <p className="input_user_txt">Текст сообщения *</p>
                   <textarea
                     name="message"
                     value={formState.message}
