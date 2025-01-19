@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/image/1.svg";
-import kabinet from "../../assets/image/kabinet.svg"
 import { CgMenu } from "react-icons/cg";
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
@@ -13,7 +12,7 @@ const Nav = () => {
   };
   const handleLinkClick = (callback) => {
     toggleMenu();
-    if (callback) callback(); // Call the callback function if provided
+    if (callback) callback();
   };
   const [active, setActive] = useState(false)
   const toggleMenu = () => {
@@ -64,11 +63,6 @@ const Nav = () => {
     </NavLink>
   </li>
 </ul>
-<button className="nav_btn" aria-label="Личный кабинет">
-  <NavLink to="/cabinate">
-    <img src={kabinet} alt="кабинет" />
-  </NavLink>
-</button>
 <button className="nav_btn_active" onClick={toggleMenu} aria-label="Toggle Menu">
       <CgMenu className="nav_btn_active_icon" />
     </button>

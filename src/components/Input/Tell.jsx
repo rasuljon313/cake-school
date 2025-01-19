@@ -98,7 +98,7 @@ const Tell = () => {
                     onChange={handleChange}
                     required
                     type="text"
-                    placeholder="998"
+                    placeholder="+998"
                   />
                   <button
                     type="submit"
